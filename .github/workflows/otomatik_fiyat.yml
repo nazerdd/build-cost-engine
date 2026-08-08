@@ -1,0 +1,17 @@
+name: Otomatik Insaat Fiyat Guncelleyici
+
+on:
+  schedule:
+    - cron: '0 5 * * *' # Her sabah TSİ 08:00'de çalışır
+  workflow_dispatch:
+
+jobs:
+  fiyat-guncelle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - run: pip install requests beautifulsoup4 supabase
+      - run: python scraper.py

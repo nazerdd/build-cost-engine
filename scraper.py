@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 from supabase import create_client, Client
 
-# Supabase Bilgileri (URL'in sonundaki /rest/v1/ KALDIRILDI)
+# Supabase Bağlantı Bilgileri
 SUPABASE_URL = 'https://lwyfaoljighmhiamving.supabase.co'
 SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx3eWZhb2xqaWdobWhpYW12aW5nIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODYyMDgxOTEsImV4cCI6MjEwMTc4NDE5MX0.ep4PggdHISF0YSkU9MsU-GuwgQ_UvujqFWNo8MHmdWM'
 
